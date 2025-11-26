@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./Products.css";
+import Footer from "./Footer";
 
 // products
 const products = [
@@ -153,7 +154,8 @@ export default function Products() {
             <span>{product.price}</span>
           </div>
         ))}
-      </div>
+      </div><br /><br />
+      <Footer/>
     </>
   );
 }

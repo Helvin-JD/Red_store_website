@@ -1,7 +1,8 @@
 .container {
   max-width: 1200px;
-  margin: 12px auto 5px auto; /* space for navbar */
-  padding: 20px;
+  margin: auto; /* space for navbar */
+  /* padding: 20px; */
+  padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 

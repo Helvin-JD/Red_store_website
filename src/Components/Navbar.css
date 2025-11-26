@@ -35,13 +35,13 @@
 }
 
 .nav-links a:hover {
-  color: #6a11cb;
+  color: #ff523b;
 }
 
 /* LOGIN BUTTON */
 .login-btn {
   padding: 8px 18px;
-  background: #6a11cb;
+  background: #ff523b;
   border: none;
   border-radius: 8px;
   color: white;
@@ -49,7 +49,7 @@
 }
 
 .login-btn:hover {
-  background: #4c0fa9;
+  background: red;
 }
 
 /* HAMBURGER */

@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="main">
         <div>
-          <h1>halo</h1>
+          <h1>Give Your Workout A New-Style !</h1>
         </div>
       </div>
     </>

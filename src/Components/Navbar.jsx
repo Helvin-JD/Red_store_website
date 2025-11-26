@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -42,6 +44,15 @@ export default function Navbar() {
         <li>
           <Link to="/contact" onClick={() => setOpen(false)}>
             Contact
+          </Link>
+        </li>
+
+        <li>
+          <Link>
+            <FontAwesomeIcon
+              icon={faBagShopping}
+              style={{ color: "#000000" }}
+            />
           </Link>
         </li>
 

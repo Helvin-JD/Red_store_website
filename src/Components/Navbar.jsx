@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="logo">
-        <img src="https://rsanimesh.github.io/images/logo.png" alt="" />
+        <img src="https://rsanimesh.github.io/images/logo.png" alt="logo" />
       </div>
 
       {/* Hamburger Menu */}
@@ -18,19 +19,30 @@ export default function Navbar() {
         <span className={open ? "bar rotate2" : "bar"}></span>
       </div>
 
-      {/* nav link */}
+      {/* Nav Links */}
       <ul className={open ? "nav-links active" : "nav-links"}>
         <li>
-          <a href="#">Home</a>
+          <Link to="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
         </li>
+
         <li>
-          <a href="#">About</a>
+          <Link to="/about" onClick={() => setOpen(false)}>
+            About
+          </Link>
         </li>
+
         <li>
-          <a href="#">Products</a>
+          <Link to="/products" onClick={() => setOpen(false)}>
+            Products
+          </Link>
         </li>
+
         <li>
-          <a href="#">Contact</a>
+          <Link to="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
         </li>
 
         {/* Login Button */}

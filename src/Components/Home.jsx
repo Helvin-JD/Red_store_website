@@ -5,9 +5,11 @@ import "./Home.css"
 export default function Home() {
   return (
     <>
+      <Navbar />
       <div className="main">
-        <Navbar />
-        <h1>halo</h1>
+        <div>
+          <h1>halo</h1>
+        </div>
       </div>
     </>
   );

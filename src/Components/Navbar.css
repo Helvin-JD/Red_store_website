@@ -4,18 +4,18 @@
   top: 0;
   width: 100%;
   height: 70px;
-  background: transparent;
-  padding: 0 10rem;
+  background: white;
+  padding: 0 0rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 999;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 /* LOGO */
 .logo img {
-  width: 10rem;
+  width: 9rem;
 }
 
 /* NAV LINKS */
@@ -79,28 +79,20 @@
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* ----------------------------------------- */
-/*         SUPER RESPONSIVE BREAKPOINTS      */
-/* ----------------------------------------- */
 
-/* ===== Large Screens (1600px+) ===== */
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Large Screens */
 @media (min-width: 1600px) {
   .navbar {
-    padding: 0 14rem;
+    padding: 0 10rem;
   }
 }
 
-/* ===== Laptops/Tablets Landscape (1200px - 1599px) ===== */
-@media (max-width: 1200px) {
-  .navbar {
-    padding: 0 6rem;
-  }
-}
-
-/* ===== Tablets (900px - 1199px) ===== */
+/* Tablets */
 @media (max-width: 992px) {
   .navbar {
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
 
   .nav-links li a {
@@ -108,19 +100,9 @@
   }
 }
 
-/* ===== Tablets + Large Phones (768px - 899px) ===== */
-@media (max-width: 899px) {
-  .navbar {
-    padding: 0 2.5rem;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
-}
-
-/* ===== Phones (Below 768px) ===== */
+/* Phones */
 @media (max-width: 768px) {
+
   .hamburger {
     display: flex;
   }
@@ -130,15 +112,15 @@
     top: 70px;
     right: -100%;
     width: 100%;
-    height: 280px;
-    background: white; /* Fixed black issue */
+    height: 300px;
+    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-left: 3rem;
+    padding-left: 0rem;
     gap: 25px;
-    transition: 0.4s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
 
   .nav-links.active {
@@ -148,26 +130,16 @@
   .nav-links li a {
     font-size: 20px;
     color: #333;
+    padding-left: 2rem;
   }
 
   .login-btn {
-    width: 160px;
+    width: 150px;
     font-size: 17px;
   }
 }
 
-/* ===== Small Phones (480px - 600px) ===== */
-@media (max-width: 600px) {
-  .navbar {
-    padding: 0 1.2rem;
-  }
-
-  .logo img {
-    width: 8rem;
-  }
-}
-
-/* ===== Extra Small Phones (320px - 479px) ===== */
+/* Small Phones */
 @media (max-width: 480px) {
   .navbar {
     padding: 0 1rem;
@@ -175,13 +147,5 @@
 
   .logo img {
     width: 7rem;
-  }
-
-  .nav-links li a {
-    font-size: 18px;
-  }
-
-  .login-btn {
-    width: 150px;
   }
 }

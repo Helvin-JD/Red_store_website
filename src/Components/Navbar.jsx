@@ -12,14 +12,13 @@ export default function Navbar() {
       </div>
 
       {/* Hamburger Menu */}
-
       <div className="hamburger" onClick={() => setOpen(!open)}>
         <span className={open ? "bar rotate1" : "bar"}></span>
         <span className={open ? "bar hide" : "bar"}></span>
         <span className={open ? "bar rotate2" : "bar"}></span>
       </div>
 
-      {/* Nav Links */}
+      {/* nav link */}
       <ul className={open ? "nav-links active" : "nav-links"}>
         <li>
           <a href="#">Home</a>
@@ -34,6 +33,7 @@ export default function Navbar() {
           <a href="#">Contact</a>
         </li>
 
+        {/* Login Button */}
         <button className="login-btn">Login</button>
       </ul>
     </nav>

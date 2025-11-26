@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <div className="main">
         <Navbar />
+        <h1>halo</h1>
       </div>
     </>
   );

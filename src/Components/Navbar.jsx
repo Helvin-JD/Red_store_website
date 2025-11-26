@@ -21,6 +21,8 @@ export default function Navbar() {
         <span className={open ? "bar rotate2" : "bar"}></span>
       </div>
 
+      <div></div>
+
       {/* Nav Links */}
       <ul className={open ? "nav-links active" : "nav-links"}>
         <li>

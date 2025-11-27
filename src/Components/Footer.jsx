@@ -62,7 +62,7 @@ export default function Footer() {
           <hr /><br />
           <center>
             <p>Copytight 2020 - All Rights are reserved</p>
-          </center>
+          </center><br />
         </div>
       </div>
     </>

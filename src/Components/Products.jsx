@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import "./Products.css";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar as faFilledStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
+
 
 // products
 const products = [
@@ -13,6 +17,7 @@ const products = [
     description:
       "BENYAR Automatic Mechanical Skeleton Leather Strap Men's Watch",
     price: "$299.99",
+
   },
   {
     id: 2,
@@ -143,19 +148,40 @@ const products = [
 export default function Products() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div className="container">
-        <h2>Products</h2>
+        <h2>
+          Products <hr class="small-hr" />
+        </h2>
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.name} className="image" />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
+            <ul className="icons">
+              <li>
+                <FontAwesomeIcon icon={faFilledStar} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faFilledStar} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faFilledStar} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faFilledStar} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faEmptyStar} />
+              </li>
+            </ul>
             <span>{product.price}</span>
           </div>
         ))}
-      </div><br /><br />
-      <Footer/>
+      </div>
+      <br />
+      <br />
+      <Footer />
     </>
   );
 }

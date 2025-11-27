@@ -62,7 +62,7 @@ export default function ProductDetails() {
 
         <div className="details-info">
           <h1>{product.name}</h1>
-          <h2>{displayPrice}</h2>
+          <h2>$ {displayPrice}</h2>
 
           <select
             className="size-select"

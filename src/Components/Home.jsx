@@ -65,7 +65,7 @@ export default function Home() {
                 <img src={product.image} alt={product.name} className="image" />
                 <h4>{product.name}</h4>
                 <br />
-                <p>{product.price}</p>
+                <p>$ {product.price}</p>
             </Link>
           ))}
         </div>
@@ -87,7 +87,7 @@ export default function Home() {
               <img src={product.image} alt={product.name} className="image" />
               <h4>{product.name}</h4>
               <br />
-              <p>{product.price}</p>
+              <p>$ {product.price}</p>
             </Link>
           ))}
         </div>

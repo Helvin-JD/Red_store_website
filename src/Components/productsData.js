@@ -9,7 +9,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/815OtGsB3rL._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/81RMQnHpMdL._SX679_.jpg",
     description:"BENYAR Automatic Mechanical Skeleton Leather Strap Men's Watch",
-    price: "$299.99",
+    price: "299.99",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/717764CgyKL._SY741_.jpg",
     image4: "https://m.media-amazon.com/images/I/71JdCWe2EIL._SY741_.jpg",
     description:"Pure Cotton Men's Graphic Print Oversized Fit Half Sleeve Round Neck",
-    price: "$199.99",
+    price: "199.99",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/510mB4XBSVL._SY695_.jpg",
     image4: "https://m.media-amazon.com/images/I/51VXFlIJUAL._SY535_.jpg",
     description: "Unisex-Adult BMW MMS running sports shoes",
-    price: "$399.99",
+    price: "399.99",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/81tenaGhnnL._SX625_.jpg",
     image4: "https://m.media-amazon.com/images/I/81tenaGhnnL._SX625_.jpg",
     description: "Men Agora 1.0 Multisport Lightweight breathable shoes",
-    price: "$129.99",
+    price: "129.99",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/51h7UxIK4uL.jpg",
     image4: "https://m.media-amazon.com/images/I/61+gTTI3VUL.jpg",
     description: "Cotton dye wash oversized unisex printed T-shirt",
-    price: "$9.99",
+    price: "9.99",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/51CPPXjHSSL._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/71ywoJVnxPL._SX679_.jpg",
     description: "Blue graphic slim-fit T-shirt",
-    price: "$19.99",
+    price: "19.99",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/71L1WsLZQ0L._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/51d5fa2nwVL._SX679_.jpg",
     description: "Organized Duffle Bag with Adjustable Strap",
-    price: "$15.99",
+    price: "15.99",
   },
 
   {
@@ -94,7 +94,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/71LLGPVysqL._SY741_.jpg",
     image4: "https://m.media-amazon.com/images/I/71eu-FpyyAL._SY741_.jpg",
     description: "Men's Checked Slim Fit Cotton Casual Shirt",
-    price: "$29.99",
+    price: "29.99",
   },
   {
     id: 9,
@@ -106,7 +106,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/813s-Y93KhL._SX569_.jpg",
     image4: "https://m.media-amazon.com/images/I/81aLtz3LFGL._SX569_.jpg",
     description: "Premium cotton slim-fit Men's Casual Shirt",
-    price: "$24.99",
+    price: "24.99",
   },
   {
     id: 10,
@@ -118,7 +118,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/61ifLdvoNbL._SX466_.jpg",
     image4: "https://m.media-amazon.com/images/I/61EVwf2zdHL._SX466_.jpg",
     description: "Soft cotton stretchable joggers",
-    price: "$22.99",
+    price: "22.99",
   },
   {
     id: 11,
@@ -130,7 +130,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/81Udb0aEgjL._SL1500_.jpg",
     image4: "https://m.media-amazon.com/images/I/712P-YpFe8L._SL1500_.jpg",
     description: "Laptop Bag With Sleeve, Shoe Compartment & USB Charging",
-    price: "$39.99",
+    price: "39.99",
   },
   {
     id: 12,
@@ -142,7 +142,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/81PmOI17bxL._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/71vJtqt4fqL._SX679_.jpg",
     description: "Pack of 3 cotton rich ankle socks",
-    price: "$6.99",
+    price: "6.99",
   },
   {
     id: 13,
@@ -154,7 +154,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/71Rvk69ZlqL._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/81c5Ii-l6rL._SX679_.jpg",
     description: "Cobra Steel Silver Automatic Watch",
-    price: "$49.99",
+    price: "49.99",
   },
   {
     id: 14,
@@ -166,7 +166,7 @@ const products = [
     image3:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-LS3.jpg?v=1761320478&width=600",
     image4:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC2.jpg?v=1761320478&width=600",
     description: "Skeleton Automatic Watch for Men",
-    price: "$1999.99",
+    price: "1999.99",
   },
   {
     id: 15,
@@ -178,7 +178,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/71ivarr8REL._SY695_.jpg",
     image4: "https://m.media-amazon.com/images/I/71IZqntoBXL._SY695_.jpg",
     description: "Naruto Sasuke High Top Sneakers",
-    price: "$34.99",
+    price: "34.99",
   },
   {
     id: 16,
@@ -190,7 +190,7 @@ const products = [
     image3: "https://m.media-amazon.com/images/I/71t2KRfkVvL._SY625_.jpg",
     image4: "https://m.media-amazon.com/images/I/61ICZjzUlIL._SY625_.jpg",
     description: "Stylish Casual Sneaker Shoes",
-    price: "$44.99",
+    price: "44.99",
   },
 ];
 export default products;

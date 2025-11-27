@@ -59,7 +59,7 @@ export default function Products() {
                 <FontAwesomeIcon icon={faEmptyStar} />
               </li>
             </ul>
-            <span>{product.price}</span>
+            <span>$ {product.price}</span>
           </Link>
         ))}
       </div>

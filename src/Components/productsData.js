@@ -1,34 +1,32 @@
-// productsData.js
-
 const products = [
   {
     id: 1,
     name: "BENYAR",
+    title: "watch",
     image: "https://m.media-amazon.com/images/I/814hrCDIz4L._SX679_.jpg",
     image1: "https://m.media-amazon.com/images/I/81rW8pqRZnL._SX679_.jpg",
     image2: "https://m.media-amazon.com/images/I/71y22YZ0XbL._SX679_.jpg",
     image3: "https://m.media-amazon.com/images/I/815OtGsB3rL._SX679_.jpg",
     image4: "https://m.media-amazon.com/images/I/81RMQnHpMdL._SX679_.jpg",
-    description:
-      "BENYAR Automatic Mechanical Skeleton Leather Strap Men's Watch",
+    description:"BENYAR Automatic Mechanical Skeleton Leather Strap Men's Watch",
     price: "$299.99",
   },
   {
     id: 2,
     name: "Verido",
+    title:"shoe",
     image: "https://m.media-amazon.com/images/I/616xMq9zXJL._SY741_.jpg",
     image1: "https://m.media-amazon.com/images/I/71PJEGrEPEL._SY741_.jpg",
     image2: "https://m.media-amazon.com/images/I/615M7gt6HyL._SY741_.jpg",
     image3: "https://m.media-amazon.com/images/I/717764CgyKL._SY741_.jpg",
     image4: "https://m.media-amazon.com/images/I/71JdCWe2EIL._SY741_.jpg",
-    description:
-      "Pure Cotton Men's Graphic Print Oversized Fit Half Sleeve Round Neck",
+    description:"Pure Cotton Men's Graphic Print Oversized Fit Half Sleeve Round Neck",
     price: "$199.99",
   },
-
   {
     id: 3,
     name: "Puma Neo Cat Mid 2.0",
+    title:"shoe",
     image: "https://m.media-amazon.com/images/I/51qZ45UxF9L._SY695_.jpg",
     image1: "https://m.media-amazon.com/images/I/61oyoG8dzfL._SY695_.jpg",
     image2: "https://m.media-amazon.com/images/I/61xjkV5tnGL._SY695_.jpg",
@@ -39,7 +37,8 @@ const products = [
   },
   {
     id: 4,
-    name: "Adidas Running Shoes",
+    name: "Adidas Running Shoe",
+    title:"shoe",
     image: "https://m.media-amazon.com/images/I/71NPlnbjxeL._SX695_.jpg",
     image1: "https://m.media-amazon.com/images/I/81LfipR3+yL._SX625_.jpg",
     image2: "https://m.media-amazon.com/images/I/71Xq-p+FsjL._SY625_.jpg",
@@ -48,10 +47,10 @@ const products = [
     description: "Men Agora 1.0 Multisport Lightweight breathable shoes",
     price: "$129.99",
   },
-
   {
     id: 5,
     name: "Bee-Fits Oversized Tee",
+    title:"tshirt",
     image: "https://m.media-amazon.com/images/I/51h7UxIK4uL.jpg",
     image1: "https://m.media-amazon.com/images/I/51Kqnev9X+L.jpg",
     image2: "https://m.media-amazon.com/images/I/81L+qg4Kb3L._SY741_.jpg",
@@ -63,6 +62,7 @@ const products = [
   {
     id: 6,
     name: "Puma Slim Fit T-Shirt",
+    title: "tshirt",
     image: "https://m.media-amazon.com/images/I/61VbsN6cjJL._SX679_.jpg",
     image1: "https://m.media-amazon.com/images/I/61UfBBBodZL._SX679_.jpg",
     image2: "https://m.media-amazon.com/images/I/71FowLdVC2L._SX679_.jpg",
@@ -74,6 +74,7 @@ const products = [
   {
     id: 7,
     name: "Boldfit Gym Bag",
+    title:"bag",
     image: "https://m.media-amazon.com/images/I/71+aDeSfS5L._SX679_.jpg",
     image1: "https://m.media-amazon.com/images/I/615QDqnOvdL._SX679_.jpg",
     image2: "https://m.media-amazon.com/images/I/61AUfwpL3vL._SX679_.jpg",
@@ -86,6 +87,7 @@ const products = [
   {
     id: 8,
     name: "THE BEAR HOUSE",
+    title:"shirt",
     image: "https://m.media-amazon.com/images/I/61y07FX96RL._SY879_.jpg",
     image1: "https://m.media-amazon.com/images/I/81zeC6DBDML._SY741_.jpg",
     image2: "https://m.media-amazon.com/images/I/81Ef4BlcBmL._SY741_.jpg",
@@ -97,6 +99,7 @@ const products = [
   {
     id: 9,
     name: "Dennis Lingo Shirt",
+    title:"shirt",
     image: "https://m.media-amazon.com/images/I/71NCBXev2YL._SY879_.jpg",
     image1: "https://m.media-amazon.com/images/I/91GPf3vyK1L._SX569_.jpg",
     image2: "https://m.media-amazon.com/images/I/915C7GSuOOL._SX569_.jpg",
@@ -105,10 +108,10 @@ const products = [
     description: "Premium cotton slim-fit Men's Casual Shirt",
     price: "$24.99",
   },
-
   {
     id: 10,
     name: "Jockey Track Pants",
+    title:"pant",
     image: "https://m.media-amazon.com/images/I/71vUWVMOSBL._SX466_.jpg",
     image1: "https://m.media-amazon.com/images/I/71A-iH9othL._SX466_.jpg",
     image2: "https://m.media-amazon.com/images/I/61ZzEPIwuHL._SX466_.jpg",
@@ -120,8 +123,8 @@ const products = [
   {
     id: 11,
     name: "Hexagon Laptop Bag",
-    image:
-      "https://m.media-amazon.com/images/I/313wG+n2AbL._SY300_SX300_QL70_FMwebp_.jpg",
+    title:"bag",
+    image:"https://m.media-amazon.com/images/I/313wG+n2AbL._SY300_SX300_QL70_FMwebp_.jpg",
     image1: "https://m.media-amazon.com/images/I/81AMqxi4pUL._SL1500_.jpg",
     image2: "https://m.media-amazon.com/images/I/81fOOrKRf9L._SL1500_.jpg",
     image3: "https://m.media-amazon.com/images/I/81Udb0aEgjL._SL1500_.jpg",
@@ -129,10 +132,10 @@ const products = [
     description: "Laptop Bag With Sleeve, Shoe Compartment & USB Charging",
     price: "$39.99",
   },
-
   {
     id: 12,
-    name: "HRX Men’s Ankle Socks",
+    name: "HRX Men Ankle Socks",
+    title:"Socks",
     image: "https://m.media-amazon.com/images/I/812QkIIFUaL._SX679_.jpg",
     image1: "https://m.media-amazon.com/images/I/81EehgAUSoL._SX569_.jpg",
     image2: "https://m.media-amazon.com/images/I/71xDtOD574L._SX679_.jpg",
@@ -141,10 +144,10 @@ const products = [
     description: "Pack of 3 cotton rich ankle socks",
     price: "$6.99",
   },
-
   {
     id: 13,
     name: "Atowak Automatic",
+    title: "watch",
     image: "https://m.media-amazon.com/images/I/71COV3ihJAL._SX679_.jpg",
     image1: "https://m.media-amazon.com/images/I/61D5fucPRdL._SX679_.jpg",
     image2: "https://m.media-amazon.com/images/I/71cIOvDNv4L._SX679_.jpg",
@@ -156,22 +159,19 @@ const products = [
   {
     id: 14,
     name: "Stuhrling Original",
+    title: "watch",
     image: "https://m.media-amazon.com/images/I/818L0-9YYLL._SX679_.jpg",
-    image1:
-      "https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC1.jpg?v=1761320478&width=600",
-    image2:
-      "https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC4.jpg?v=1761320478&width=600",
-    image3:
-      "https://stuhrling.com/cdn/shop/products/3925.2-Legacy-LS3.jpg?v=1761320478&width=600",
-    image4:
-      "https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC2.jpg?v=1761320478&width=600",
+    image1:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC1.jpg?v=1761320478&width=600",
+    image2:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC4.jpg?v=1761320478&width=600",
+    image3:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-LS3.jpg?v=1761320478&width=600",
+    image4:"https://stuhrling.com/cdn/shop/products/3925.2-Legacy-MC2.jpg?v=1761320478&width=600",
     description: "Skeleton Automatic Watch for Men",
     price: "$1999.99",
   },
-
   {
     id: 15,
     name: "The Souled Store Store",
+    title: "tshirt",
     image: "https://m.media-amazon.com/images/I/51cdyJYlVDL._SY695_.jpg",
     image1: "https://m.media-amazon.com/images/I/71pVJoK24EL._SY695_.jpg",
     image2: "https://m.media-amazon.com/images/I/712C0DdnpOL._SY695_.jpg",
@@ -183,6 +183,7 @@ const products = [
   {
     id: 16,
     name: "U.S. POLO ASSN",
+    title: "shoe",
     image: "https://m.media-amazon.com/images/I/71TCP-Tq2VL._SY695_.jpg",
     image1: "https://m.media-amazon.com/images/I/71uzbhaf75L._SY625_.jpg",
     image2: "https://m.media-amazon.com/images/I/61L+EpbB+6L._SY625_.jpg",
@@ -192,5 +193,4 @@ const products = [
     price: "$44.99",
   },
 ];
-
 export default products;

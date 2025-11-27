@@ -14,8 +14,11 @@
   text-align: center;
   margin-bottom: 10px;
 }
+.pro-txt{
+  margin-left: 56.6rem;
+}
 .small-hr {
-  width: 6rem;
+  width: 4rem;
   border: 2px solid #ff523b;
   margin: auto;
 }

@@ -50,7 +50,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link>
+          <Link to="/cart" onClick={() => setOpen(false)}>
             <FontAwesomeIcon
               icon={faBagShopping}
               style={{ color: "#000000" }}

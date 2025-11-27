@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import "./Home.css"
 import productsData from "./productsData";
 import Footer from './Footer';
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -49,31 +50,45 @@ export default function Home() {
         </div>
       </div>
       <div className="f-products">
-        <h2 className="f-title">Featured Products <hr className="medium-hr" /></h2>
+        <h2 className="f-title">
+          Featured Products <hr className="medium-hr" />
+        </h2>
 
         <div className="product-grid-1">
           {productsData.slice(12, 16).map((product) => (
-            <div className="product-card-1" key={product.id}>
-              <img src={product.image} alt={product.name} className="image" />
-              <h4>{product.name}</h4>
-              <br />
-              <p>{product.price}</p>
-            </div>
+            <Link
+              to={`/product/${product.id}`}
+              key={product.id}
+              className="product-card-1"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+                <img src={product.image} alt={product.name} className="image" />
+                <h4>{product.name}</h4>
+                <br />
+                <p>{product.price}</p>
+            </Link>
           ))}
         </div>
       </div>
       <br />
 
       <div className="f-products">
-        <h2 className="f-title">Latest Products <hr className="medium-hr" /></h2>
+        <h2 className="f-title">
+          Latest Products <hr className="medium-hr" />
+        </h2>
         <div className="product-grid-1">
           {productsData.slice(0, 8).map((product) => (
-            <div className="product-card-1" key={product.id}>
+            <Link
+              to={`/product/${product.id}`}
+              key={product.id}
+              className="product-card-1"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <img src={product.image} alt={product.name} className="image" />
               <h4>{product.name}</h4>
               <br />
               <p>{product.price}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -99,7 +114,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

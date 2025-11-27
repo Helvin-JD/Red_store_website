@@ -58,6 +58,12 @@ export default function ProductDetails() {
       <div className="details">
         <div className="image-section">
           <img src={product.image} className="details-img" alt="" />
+          <div className="thumbnail-row">
+            <img src={product.image1} />
+            <img src={product.image2} />
+            <img src={product.image3} />
+            <img src={product.image4} />
+          </div>
         </div>
 
         <div className="details-info">

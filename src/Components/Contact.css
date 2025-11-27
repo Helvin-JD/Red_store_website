@@ -1,0 +1,156 @@
+/* Background */
+.contact-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, white, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.contact-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.contact-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sub-text {
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/* Form */
+.contact-form {
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-box input:focus {
+  border-color: #1c3d96;
+}
+
+/* Button */
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  background: #0d1b4c;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #0a1538;
+}
+
+/* Footer text */
+.footer-text {
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ----------------------------- */
+/*     RESPONSIVE BREAKPOINTS      */
+/* ----------------------------- */
+
+/* 📱 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-card h2 {
+    font-size: 26px;
+  }
+  .input-row {
+    flex-direction: column;
+  }
+  .send-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .contact-card {
+    padding: 20px;
+  }
+  .contact-card h2 {
+    font-size: 22px;
+  }
+  .input-box input {
+    padding-left: 35px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 330px) {
+  .contact-card {
+    padding: 15px;
+  }
+  .send-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-card {
+    max-width: 500px;
+    padding: 35px;
+  }
+  .contact-card h2 {
+    font-size: 28px;
+  }
+  .input-box input {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1400px) {
+  .contact-card {
+    max-width: 550px;
+  }
+}

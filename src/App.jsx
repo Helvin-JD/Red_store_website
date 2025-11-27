@@ -1,21 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import {BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Components/Home'
-import Products from './Components/Products'
+import { useState } from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Products from "./Components/Products";
+import ProductDetails from "./Components/ProductDetails";
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Products' element={ <Products/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Veirdo",
+    name: "Verido",
     image: "https://m.media-amazon.com/images/I/616xMq9zXJL._SY741_.jpg",
     image1: "https://m.media-amazon.com/images/I/71PJEGrEPEL._SY741_.jpg",
     image2: "https://m.media-amazon.com/images/I/615M7gt6HyL._SY741_.jpg",

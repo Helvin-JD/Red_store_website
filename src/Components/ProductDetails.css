@@ -124,6 +124,7 @@
   max-width: 480px;
 }
 
+
 /* Tablet */
 @media (max-width: 992px) {
   .details-container {

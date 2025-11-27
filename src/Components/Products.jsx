@@ -1,5 +1,5 @@
 // src/Components/Products.jsx
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "./Products.css";
 import Footer from "./Footer";
@@ -12,16 +12,36 @@ import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
 import products from "../Components/productsData";
 
 export default function Products() {
+  const [search, setSearch] = useState("");
+
+  const filteredProducts = products.filter((p) =>
+    p.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <>
       <Navbar />
-
+      <div className="search-bar-container">
+        <input
+          type="text"
+          placeholder="Search products..."
+          className="search-box"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
       <div className="container">
         <h2>
           Products <hr className="small-hr" />
         </h2>
 
-        {products.map((product) => (
+        {filteredProducts.length === 0 && (
+          <h3 style={{ width: "100%", textAlign: "center", color: "gray" }}>
+            No Products Found
+          </h3>
+        )}
+
+        {filteredProducts.map((product) => (
           <Link
             to={`/product/${product.id}`}
             key={product.id}
@@ -54,7 +74,8 @@ export default function Products() {
           </Link>
         ))}
       </div>
-<br />
+
+      <br />
       <Footer />
     </>
   );

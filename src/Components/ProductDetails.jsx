@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import products from "./ProductsData";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import "./ProductDetails.css";
+
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -20,17 +22,37 @@ export default function ProductDetails() {
   return (
     <>
       <Navbar />
+      <div className="details">
+        <div className="image-section">
+          <img src={product.image} className="details-img" alt="" />
 
-      <div className="details-container">
-        <img src={product.image} alt={product.name} className="details-img" />
+          <div className="thumbnail-row">
+            <img src={product.image1} />
+            <img src={product.image2} />
+            <img src={product.image3} />
+            <img src={product.image4} />
+          </div>
+        </div>
 
         <div className="details-info">
           <h1>{product.name}</h1>
-          <p>{product.description}</p>
           <h2>{product.price}</h2>
 
-          <button className="btn-buy">Buy Now</button>
-          <button className="btn-cart">Add to Cart</button>
+          <select className="size-select">
+            <option>Select Size</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+
+          <div className="quantity-cart">
+            <input type="number" className="qty-box" min="1" defaultValue="1" />
+            <button className="btn-cart">Add To Cart</button>
+          </div>
+
+          <h3 className="details-title">Product Details</h3>
+
+          <p className="details-description">{product.description}</p>
         </div>
       </div>
 

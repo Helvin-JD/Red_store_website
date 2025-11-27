@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faFilledStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
 
-// Correct import (MUST be ProductsData.js)
 import products from "../Components/productsData";
 
 export default function Products() {
@@ -55,7 +54,7 @@ export default function Products() {
           </Link>
         ))}
       </div>
-
+<br />
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import products from "./ProductsData";
+import products from "./productsData";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./ProductDetails.css";

@@ -32,12 +32,6 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="/about" onClick={() => setOpen(false)}>
-            About
-          </Link>
-        </li>
-
-        <li>
           <Link to="/Product" onClick={() => setOpen(false)}>
             Products
           </Link>

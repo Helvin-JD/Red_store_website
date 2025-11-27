@@ -1,8 +1,12 @@
 /* Background */
+
+.contact-main{
+   background: linear-gradient(to bottom right, #fcc4c6, #fcc4c6);
+}
 .contact-wrapper {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, white, white);
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,14 +72,14 @@
 }
 
 .input-box input:focus {
-  border-color: #1c3d96;
+  border-color: #ff523b;
 }
 
 /* Button */
 .send-btn {
   width: 100%;
   padding: 14px;
-  background: #0d1b4c;
+  background: #ff523b;
   color: white;
   font-size: 17px;
   border: none;
@@ -86,7 +90,7 @@
 }
 
 .send-btn:hover {
-  background: #0a1538;
+  background: red;
 }
 
 /* Footer text */

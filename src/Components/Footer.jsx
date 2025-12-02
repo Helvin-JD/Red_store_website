@@ -19,7 +19,6 @@ export default function Footer() {
               alt="App Store"
             />
           </div>
-
           <div className="second-col">
             <center>
               <img

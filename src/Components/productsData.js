@@ -83,7 +83,6 @@ const products = [
     description: "Organized Duffle Bag with Adjustable Strap",
     price: "15.99",
   },
-
   {
     id: 8,
     name: "THE BEAR HOUSE",

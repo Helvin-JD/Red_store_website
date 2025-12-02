@@ -53,7 +53,6 @@ export default function Home() {
         <h2 className="f-title">
           Featured Products <hr className="medium-hr" />
         </h2>
-
         <div className="product-grid-1">
           {productsData.slice(12, 16).map((product) => (
             <Link
@@ -71,7 +70,6 @@ export default function Home() {
         </div>
       </div>
       <br />
-
       <div className="f-products">
         <h2 className="f-title">
           Latest Products <hr className="medium-hr" />
@@ -93,7 +91,6 @@ export default function Home() {
         </div>
       </div>
       <br />
-
       <div className="main2">
         <div className="row2">
           <div className="row2-col-1">

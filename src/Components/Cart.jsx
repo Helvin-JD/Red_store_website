@@ -1,52 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import Navbar from "./Navbar";
-
 export default function Cart() {
   const [cart, setCart] = useState([]);
-
-  // Load cart from localStorage
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("cartItems")) || [];
     setCart(saved);
   }, []);
 
-  // Increase quantity
   const increaseQty = (id) => {
     const updated = cart.map((item) =>
       item.id === id ? { ...item, qty: item.qty + 1 } : item
     );
-
     setCart(updated);
     localStorage.setItem("cartItems", JSON.stringify(updated));
   };
-
-  // Decrease quantity
   const decreaseQty = (id) => {
     const updated = cart
       .map((item) =>
         item.id === id ? { ...item, qty: Math.max(1, item.qty - 1) } : item
       )
       .filter((item) => item.qty > 0);
-
     setCart(updated);
     localStorage.setItem("cartItems", JSON.stringify(updated));
   };
-
-  // Remove item
   const removeItem = (id) => {
     const updated = cart.filter((item) => item.id !== id);
     setCart(updated);
     localStorage.setItem("cartItems", JSON.stringify(updated));
   };
-
-  // Total price
   const total = cart.reduce((sum, item) => sum + item.price * item.qty,0);
-
   return (
     <>
       <Navbar />
-
       <div className="cart-container">
         <table className="cart-table">
           <thead>
@@ -56,7 +42,6 @@ export default function Cart() {
               <th>Subtotal</th>
             </tr>
           </thead>
-
           <tbody>
             {cart.length === 0 && (
               <tr>
@@ -68,7 +53,6 @@ export default function Cart() {
                 </td>
               </tr>
             )}
-
             {cart.map((item) => (
               <tr key={item.id}>
                 <td className="product-info">
@@ -85,7 +69,6 @@ export default function Cart() {
                     </button>
                   </div>
                 </td>
-
                 <td>
                   <div className="qty-controls">
                     <button
@@ -94,22 +77,17 @@ export default function Cart() {
                     >– </button>
 
                     <span className="qty-value">{item.qty}</span>
-
                     <button
                       className="qty-btn"
                       onClick={() => increaseQty(item.id)}
                     > + </button>
                   </div>
                 </td>
-
-               
                 <td>${((item.price) * item.qty).toFixed(2)}</td>
               </tr>
             ))}
           </tbody>
         </table>
-
-        
         <div className="cart-total">
           <h2>Total Price: ${total.toFixed(2)}</h2>
         </div>

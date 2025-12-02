@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  /* border: 1px solid blue; */
 }
 .container h2 {
   grid-column: 1 / -1;
@@ -65,12 +64,10 @@
   list-style: none;
   color: #eb5c3c;
 }
-/* SEARCH BAR */
 .search-bar-container {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
-  /* border: 1px solid red; */
 }
 .search-box {
   width: 50%;

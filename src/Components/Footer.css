@@ -1,88 +1,63 @@
-/* MAIN FOOTER WRAPPER */
 .F-main {
   background-color: #000;
   width: 100%;
 }
-
-/* FOOTER MAIN CONTAINER */
 .footer {
   width: 100%;
   background-color: #000;
   color: #ffffff;
-  
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
   padding: 3rem 6rem;
   gap: 3rem;
   flex-wrap: wrap;
 }
-
-/* ===========================
-   COLUMN 1 — APP DOWNLOAD
-   =========================== */
 .apps {
   width: 18rem;
 }
-
 .apps h3 {
   margin-bottom: 1rem;
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
 }
-
 .apps p {
   color: #bfbfbf;
   margin-bottom: 1rem;
   font-size: 15px;
 }
-
 .apps img {
   width: 100%;
   height: 4rem;
   object-fit: contain;
   margin-bottom: 0.8rem;
 }
-
-/* ===========================
-   COLUMN 2 — LOGO + TEXT
-   =========================== */
 .second-col {
   width: 26rem;
   text-align: center;
 }
-
 .second-col img {
   width: 170px;
   margin-bottom: 1rem;
 }
-
 .second-col p {
   font-size: 15px;
   color: #bfbfbf;
   line-height: 1.6;
 }
-
-/* ===========================
-   COLUMN 3 — SOCIAL LINKS
-   =========================== */
 .social-profile {
   width: 18rem;
 }
-
 .social-profile h3 {
   margin-bottom: 1rem;
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
 }
-
 .social-profile ul {
   padding: 0;
 }
-
 .social-profile ul li {
   list-style-type: none;
   margin-bottom: 10px;
@@ -91,30 +66,19 @@
   color: #bfbfbf;
   transition: 0.2s ease;
 }
-
 .social-profile ul li:hover {
   color: #ffffff;
 }
-
-/* ===========================
-   COPYRIGHT SECTION
-   =========================== */
 .bottom {
   width: 100%;
   text-align: center;
   margin-top: 2rem;
 }
-
 .bottom p {
   color: #bfbfbf;
   font-size: 15px;
   margin-bottom: 2rem;
 }
-
-/* =======================================================
-   📱 MOBILE SCREEN (Below 600px)
-   - 1 column layout
-   ======================================================= */
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
@@ -122,31 +86,22 @@
     padding: 2rem 1.5rem;
     text-align: center;
   }
-
   .apps,
   .second-col,
   .social-profile {
     width: 100%;
     text-align: center;
   }
-
   .apps img {
     width: 80%;
   }
-
   .second-col img {
     width: 150px;
   }
-
   .social-profile ul li {
     font-size: 15px;
   }
 }
-
-/* =======================================================
-   📲 TABLET SCREEN (600px – 1024px)
-   - 2 columns layout
-   ======================================================= */
 @media (min-width: 600px) and (max-width: 1024px) {
   .footer {
     padding: 3rem 2rem;
@@ -154,23 +109,16 @@
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
   }
-
   .apps,
   .second-col,
   .social-profile {
     width: 100%;
     margin: auto;
   }
-
   .second-col {
-    order: 3; /* moves logo section to bottom for clean layout */
+    order: 3; 
   }
 }
-
-/* =======================================================
-   💻 LAPTOP SCREEN (Above 1024px)
-   - 3 columns (default)
-   ======================================================= */
 @media (min-width: 1024px) {
   .footer {
     display: flex;

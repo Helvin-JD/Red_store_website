@@ -1,19 +1,14 @@
-/* Background */
-
 .contact-main{
    background: linear-gradient(to bottom right, #fcc4c6, #fcc4c6);
 }
 .contact-wrapper {
   width: 100%;
   min-height: 100vh;
- 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-
-/* Card */
 .contact-card {
   background: #ffffff;
   width: 100%;
@@ -23,35 +18,27 @@
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
-/* Title */
 .contact-card h2 {
   font-size: 32px;
   font-weight: 700;
 }
-
 .sub-text {
   color: #666;
   margin-top: 5px;
   margin-bottom: 30px;
 }
-
-/* Form */
 .contact-form {
   width: 100%;
 }
-
 .input-row {
   display: flex;
   gap: 15px;
   margin-bottom: 20px;
 }
-
 .input-box {
   position: relative;
   width: 100%;
 }
-
 .input-box .icon {
   position: absolute;
   top: 50%;
@@ -60,7 +47,6 @@
   color: #777;
   font-size: 15px;
 }
-
 .input-box input {
   width: 100%;
   padding: 12px 12px 12px 40px;
@@ -70,12 +56,9 @@
   outline: none;
   transition: 0.2s;
 }
-
 .input-box input:focus {
   border-color: #ff523b;
 }
-
-/* Button */
 .send-btn {
   width: 100%;
   padding: 14px;
@@ -88,28 +71,18 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
 .send-btn:hover {
   background: red;
 }
-
-/* Footer text */
 .footer-text {
   margin-top: 25px;
   color: #666;
   font-size: 14px;
 }
-
-/* ----------------------------- */
-/*     RESPONSIVE BREAKPOINTS      */
-/* ----------------------------- */
-
-/* 📱 Mobile (≤ 600px) */
 @media (max-width: 600px) {
   .contact-card {
     padding: 25px;
   }
-
   .contact-card h2 {
     font-size: 26px;
   }

@@ -2,47 +2,39 @@
   width: 80%;
   margin: auto;
 }
-
 .cart-table {
   width: 100%;
   border-collapse: collapse;
 }
-
 .cart-table th {
   background: tomato;
   padding: 12px;
   text-align: left;
   color: white;
 }
-
 .product-info {
   display: flex;
   gap: 15px;
   padding: 10px;
 }
-
 .cart-img {
   width: 80px;
   border-radius: 6px;
 }
-
 .cart-total {
   margin-top: 20px;
   text-align: right;
   font-size: 18px;
 }
-
 input {
   width: 50px;
   padding: 4px;
 }
-
 .qty-controls {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .qty-btn {
   width: 35px;
   height: 35px;
@@ -53,18 +45,15 @@ input {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .qty-btn:hover {
   background: #ff1a1a;
 }
-
 .qty-value {
   font-size: 18px;
   width: 30px;
   text-align: center;
   font-weight: bold;
 }
-
 .remove-btn {
   margin-top: 8px;
   background: #111;
@@ -74,7 +63,6 @@ input {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .remove-btn:hover {
   background: #333;
 }

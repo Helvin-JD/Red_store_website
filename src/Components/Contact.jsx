@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import { FaUser, FaEnvelope, FaPhone } from "react-icons/fa";
 import Navbar from "./Navbar";
+
 export default function Contact() {
   return (
     <div className="contact-main">

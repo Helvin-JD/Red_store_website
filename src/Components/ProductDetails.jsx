@@ -4,6 +4,7 @@ import products from "./productsData";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./ProductDetails.css";
+
 export default function ProductDetails() {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));

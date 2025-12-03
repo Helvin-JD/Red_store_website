@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faFilledStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
 import products from "../Components/productsData";
+
 export default function Products() {
   const [search, setSearch] = useState("");
   const filteredProducts = products.filter((p) =>

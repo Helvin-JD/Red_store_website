@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import Navbar from "./Navbar";
+
 export default function Cart() {
   const [cart, setCart] = useState([]);
   useEffect(() => {

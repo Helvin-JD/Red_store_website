@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Navbar.css";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
